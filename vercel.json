@@ -1,16 +1,22 @@
 {
-  "rewrites": [
+  "builds": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api/index.py"
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.py"
     },
     {
-      "source": "/admin/(.*)",
-      "destination": "/Frontend/admin/$1"
+      "src": "/admin/(.*)",
+      "dest": "/Frontend/admin/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/Frontend/utama/$1"
+      "src": "/(.*)",
+      "dest": "/Frontend/utama/$1"
     }
   ]
 }
