@@ -6,45 +6,9 @@
     }
   ],
   "rewrites": [
-    { 
-      "source": "/api/(.*)", 
-      "destination": "/api/index.py" 
-    },
-    { 
-      "source": "/admin", 
-      "destination": "/Frontend/admin/login.html" 
-    },
-    { 
-      "source": "/admin/dashboard", 
-      "destination": "/Frontend/admin/dashboard.html" 
-    },
-    { 
-      "source": "/admin/experience", 
-      "destination": "/Frontend/admin/experience.html" 
-    },
-    { 
-      "source": "/admin/profiles", 
-      "destination": "/Frontend/admin/profiles.html" 
-    },
-    { 
-      "source": "/admin/projects", 
-      "destination": "/Frontend/admin/projects.html" 
-    },
-    { 
-      "source": "/admin/skills", 
-      "destination": "/Frontend/admin/skills.html" 
-    },
-    { 
-      "source": "/admin/(.*)", 
-      "destination": "/Frontend/admin/$1" 
-    },
-    { 
-      "source": "/", 
-      "destination": "/Frontend/utama/index.html" 
-    },
-    { 
-      "source": "/(.*)", 
-      "destination": "/Frontend/utama/$1" 
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
     }
   ]
 }
