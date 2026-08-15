@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "/Frontend/admin/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/Frontend/utama/$1"
+    }
+  ]
+}
